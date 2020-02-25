@@ -17,7 +17,8 @@ public class invokeUsingAppActivity {
 		DesiredCapabilities cap = new DesiredCapabilities();
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "ashemulator");
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-			
+	
+		
 		cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE,"io.appium.android.apis");
 		cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,"io.appium.android.apis.ApiDemos");
 

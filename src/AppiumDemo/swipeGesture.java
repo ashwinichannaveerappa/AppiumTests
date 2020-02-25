@@ -16,7 +16,7 @@ import static io.appium.java_client.touch.offset.ElementOption.element;
 public class swipeGesture extends TestBase {
 	
 public static void main(String[] args) throws MalformedURLException {
-	AndroidDriver <AndroidElement> driver = Capabilities();
+	AndroidDriver<AndroidElement> driver = Capabilities("emulator");
 	driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
 	driver.findElementByAndroidUIAutomator("text(\"Date Widgets\")").click();
 	driver.findElementByAndroidUIAutomator("text(\"2. Inline\")").click();

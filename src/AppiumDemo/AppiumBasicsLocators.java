@@ -12,7 +12,7 @@ public class AppiumBasicsLocators extends TestBase {
 
 		// capabiltiies method returns driver object
 
-		AndroidDriver<AndroidElement> driver = Capabilities();
+		AndroidDriver<AndroidElement> driver = Capabilities("emulator");
 
 		// click on preference
 		// click on preferencesdependences

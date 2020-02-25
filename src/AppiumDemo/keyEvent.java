@@ -10,7 +10,7 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 public class keyEvent extends TestBase {
 	
 	public static void main(String[] args) throws MalformedURLException {
-		AndroidDriver<AndroidElement> driver = Capabilities();
+		AndroidDriver<AndroidElement> driver = Capabilities("emulator");
 		
 		//printing current activity
 		System.out.println(driver.currentActivity());

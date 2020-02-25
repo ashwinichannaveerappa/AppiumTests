@@ -9,7 +9,7 @@ import io.appium.java_client.android.AndroidElement;
 public class UIautomatorLocator extends TestBase {
 
 	public static void main(String[] args) throws MalformedURLException {
-		AndroidDriver<AndroidElement> driver = Capabilities();
+		AndroidDriver<AndroidElement> driver = Capabilities("emulator");
 		
 		//syntaxt :  ("attribute("Value")")
 		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();

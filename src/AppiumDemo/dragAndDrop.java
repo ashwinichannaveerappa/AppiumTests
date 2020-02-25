@@ -17,7 +17,7 @@ import static io.appium.java_client.touch.offset.ElementOption.element;
 public class dragAndDrop extends TestBase {
 	
 	public static void main(String[] args) throws MalformedURLException {
-		AndroidDriver<AndroidElement> driver= Capabilities();
+		AndroidDriver<AndroidElement> driver= Capabilities("emulator");
 		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
 		driver.findElementByAndroidUIAutomator("text(\"Drag and Drop\")").click();
 		

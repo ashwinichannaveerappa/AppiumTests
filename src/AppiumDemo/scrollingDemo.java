@@ -8,7 +8,7 @@ import io.appium.java_client.android.AndroidElement;
 public class scrollingDemo extends TestBase {
 		
 		public static void main(String[] args) throws MalformedURLException {
-			AndroidDriver <AndroidElement> driver = Capabilities();
+			AndroidDriver<AndroidElement> driver = Capabilities("emulator");
 			driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
 
 			//scrolldown using android api 

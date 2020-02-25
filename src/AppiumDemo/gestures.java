@@ -19,7 +19,7 @@ public class gestures extends TestBase{
 
 	public static void main(String[] args) throws MalformedURLException {
 
-		AndroidDriver<AndroidElement> driver = Capabilities();
+		AndroidDriver<AndroidElement> driver = Capabilities("emulator");
 		driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
 
 		//Tap -- first gesture

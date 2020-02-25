@@ -13,11 +13,15 @@ public class TestBase {
  
 
  //To launch the application
-public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException {
+public static AndroidDriver<AndroidElement> Capabilities(String device) throws MalformedURLException {
  
 		File app = new File("src", "ApiDemos-debug.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "ashemulator");
+		if(device.contains("emulator")) {
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "ashemulator");
+		}else if(device.contains("real")) {
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Device");
+		}
 		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
 		//cap.setCapability(AndroidMobileCapabilityType.AUTO_GRANT_PERMISSIONS,true);
 		cap.setCapability("app", app.getAbsolutePath());
